@@ -1,15 +1,16 @@
 package main
 
 const (
-	SERVICE_NAME = "ips"
-	LOG_FILE_PATH = "./ips.log"
+	SERVICE_NAME                           = "ips"
+	LOG_FILE_PATH                          = "./ips.log"
+	ITEM_PRICE_CACHE_REFRESH_INTERVAL_MINS = 10
 )
 
 const (
-	DB_HOST           = "offerupchallenge.cgtzqpsohu0g.us-east-1.rds.amazonaws.com"
-	DB_PORT           = "5432"
-	DB_USERID         = "offerupchallenge"
-	DB_PWD            = "ouchallenge"
+	DB_HOST        = "offerupchallenge.cgtzqpsohu0g.us-east-1.rds.amazonaws.com"
+	DB_PORT        = "5432"
+	DB_USERID      = "offerupchallenge"
+	DB_PWD         = "ouchallenge"
 	ITEMPRICES_DB  = "itemprices"
 	ITEMSALE_TABLE = "itemPrices_itemsale"
 )

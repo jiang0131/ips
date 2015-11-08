@@ -3,8 +3,8 @@ package main
 import (
 	"database/sql"
 	"fmt"
-	"time"
 	_ "github.com/lib/pq"
+	"time"
 )
 
 type Item struct {
@@ -13,10 +13,10 @@ type Item struct {
 }
 
 type ItemPriceCache struct {
-	itemModePrice map[Item]int
-	itemTotalCnt map[Item]int
+	itemModePrice  map[Item]int
+	itemTotalCnt   map[Item]int
 	titleModePrice map[string]int
-	titleTotalCnt map[string]int
+	titleTotalCnt  map[string]int
 }
 
 var priceCache *ItemPriceCache
@@ -101,9 +101,8 @@ func refreshItemPrice() error {
 	return nil
 }
 
-
 func startPollingPriceCache() {
-	for _ = range time.Tick(1 * time.Minute) {
+	for _ = range time.Tick(ITEM_PRICE_CACHE_REFRESH_INTERVAL_MINS * time.Minute) {
 		if err := refreshItemPrice(); err != nil {
 			logData := make(map[string]interface{})
 			logData["name"] = "ItemPriceCache"

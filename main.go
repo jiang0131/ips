@@ -18,10 +18,10 @@ func main() {
 
 	m := martini.Classic()
 	m.Use(render.Renderer())
-	m.Use(loggerMiddleware())
+	//m.Use(loggerMiddleware())
 
 	m.Get("/item-price-service/", GetPriceHandler)
 
-	m.RunOnAddr(":3000")
+	m.RunOnAddr(":80")
 	m.Run()
 }
