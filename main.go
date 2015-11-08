@@ -22,6 +22,6 @@ func main() {
 
 	m.Get("/item-price-service/", GetPriceHandler)
 
-	m.RunOnAddr(":80")
+	m.RunOnAddr(":3000")
 	m.Run()
 }
