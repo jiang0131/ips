@@ -3,7 +3,7 @@ package main
 const (
 	SERVICE_NAME                           = "ips"
 	LOG_FILE_PATH                          = "./ips.log"
-	ITEM_PRICE_CACHE_REFRESH_INTERVAL_MINS = 10
+	ITEM_PRICE_CACHE_REFRESH_INTERVAL_MINS = 30
 )
 
 const (

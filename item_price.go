@@ -58,9 +58,9 @@ func refreshItemPrice() error {
 			priceCacheNew.itemModePrice[Item{city, title}] = modePrice
 		}
 		if _, ok := priceCacheNew.itemTotalCnt[Item{city, title}]; ok {
-			priceCacheNew.itemTotalCnt[Item{city, title}] += 1
+			priceCacheNew.itemTotalCnt[Item{city, title}] += cnt
 		} else {
-			priceCacheNew.itemTotalCnt[Item{city, title}] = 1
+			priceCacheNew.itemTotalCnt[Item{city, title}] = cnt
 		}
 	}
 

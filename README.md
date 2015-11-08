@@ -2,7 +2,7 @@ Item Price Service (IPS)
 ===
 A microservice to provide listing price recommendation given an item.
 
-Dependency
+Requirement
 -----------
 - Go (>=1.4)
 
