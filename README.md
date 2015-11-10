@@ -1,6 +1,6 @@
 Item Price Service (IPS)
 ===
-A microservice to provide listing price recommendation given an item.
+A microservice to provide listing price recommendation given an item. Built in Go and [Martini](https://github.com/go-martini/martini) framework.
 
 Requirement
 -----------
